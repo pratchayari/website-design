@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ CSS</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <style>
+        h1 {
+            color:brown; /* เปลี่ยนสีหัวเรื่องใหญ่เป็นสีน้ำตาล */
+            font-size: 48pt;
+            /*font-size: 24pt;*/
+        }
+        div.myid {
+            color: white;
+            background-color: red;
+            display: block;
+        }
+        p {
+            color: blue;
+            font-size: 16pt;
+        }
+        h2{
+            color: darkgreen;
+            font-size: 400pt;
+        }
+
+        #myID{ /* 100 */
+            font-size: 8pt;
+        }
+        .myclass{ /* 10 */
+            font-size: 50pt;
+        }
+        div p { /* 2 */ 
+            font-size: 300pt;
+            color:rgb(1, 1, 8);
+        }
+        p.myclass{ /* 11*/
+            font-size: 10pt;
+            color: rgb(222, 110, 110);
+        }
+        p {/* 1 */
+            color: rgb(221, 255, 0);
+            font-size: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>ตัวอย่าง 1-1 โครงสร้างพื้นฐานของ CSS</h1>
+    <div>
+        <p class="myclass"> Lorem ipsum dolor sit, amet consectetur <span style="background-color: yellow;"> elit. </span>Incidunt earum porro quidem repellendus libero eius voluptates nemo, impedit aperiam eligendi distinctio quaerat possimus voluptatem voluptatibus amet, maiores esse dolorum exercitationem.</p>
+    </div>
+    <div>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt earum porro quidem repellendus libero eius voluptates nemo, impedit aperiam eligendi distinctio quaerat possimus voluptatem voluptatibus amet, maiores esse dolorum exercitationem.</p>
+        <h2 style="font-size: 48pt;">การใช้งาน External Style</h2>
+    </div>
+    </body>
+</html>
