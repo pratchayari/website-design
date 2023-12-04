@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ตัวอย่างที่ 1-1 โครงสร้างพื้นฐานของ CSS</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="html5reset-1.6.1.css">
+    <link rel="stylesheet" href="styletext.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         h1 {
             color:brown; /* เปลี่ยนสีหัวเรื่องใหญ่เป็นสีน้ำตาล */
@@ -25,16 +27,14 @@
             font-size: 400pt;
         }
 
-        #myID{ /* 100 */
-            font-size: 8pt;
+        h1#myID { /* 10 */
+            font-size: 100pt;
+            color: darkslategrey;
         }
         .myclass{ /* 10 */
-            font-size: 50pt;
+            font-size: 16pt;
         }
-        div p { /* 2 */ 
-            font-size: 300pt;
-            color:rgb(1, 1, 8);
-        }
+
         p.myclass{ /* 11*/
             font-size: 10pt;
             color: rgb(222, 110, 110);
@@ -43,16 +43,41 @@
             color: rgb(221, 255, 0);
             font-size: 50pt;
         }
+        h1 {
+            color:brown; /* เปลี่ยนสีหัวเรื่องใหญ่เป็นสีน้ำตาล */
+            font-size: 48pt;
+            /*font-size: 24pt;*/
+        }
+
+        div{
+            font-size: 1.5em;
+            background-color: hsl(316, 65%, 33%);
+
+        }
     </style>
 </head>
 <body>
-    <h1>ตัวอย่าง 1-1 โครงสร้างพื้นฐานของ CSS</h1>
+    <span style="font-size: 1rem;">กำหนดค่าขนาดตัวอักษร = 1 rem</span><br>
+    <span style="font-size: 16px;">กำหนดค่าขนาดตัวอักษร = 16 px</span><br>
+    <span style="font-size: 2rem;">กำหนดค่าขนาดตัวอักษร = 2 rem</span>
+    <!--<h1 id="myID">ตัวอย่าง 1-1 โครงสร้างพื้นฐานของ CSS</h1>-->
     <div>
+        ตัวอักษร 1 em = 30 px  30px * 1.5 เท่า = 45px
+        <span style="font-size: 45;">ตัวอักษรนี้มึขนาด = 45 px</span>
+            <div>
+                ตัวอักษรที่เป็นลูกของ div 45px * 1.5 เท่า ช 67.5 px <br>
+                <span style="font-size: 67.5px;">ตัวอักษรนี้มึขนาด = 67.5px</span>
+                <div>
+                    ตัวอักษรที่เป็นลูกของ div
+                </div>
+            </div>
         <p class="myclass"> Lorem ipsum dolor sit, amet consectetur <span style="background-color: yellow;"> elit. </span>Incidunt earum porro quidem repellendus libero eius voluptates nemo, impedit aperiam eligendi distinctio quaerat possimus voluptatem voluptatibus amet, maiores esse dolorum exercitationem.</p>
     </div>
     <div>
         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt earum porro quidem repellendus libero eius voluptates nemo, impedit aperiam eligendi distinctio quaerat possimus voluptatem voluptatibus amet, maiores esse dolorum exercitationem.</p>
         <h2 style="font-size: 48pt;">การใช้งาน External Style</h2>
     </div>
+    <h3> ข้อความ Tag H3 </h3>
     </body>
+    
 </html>
