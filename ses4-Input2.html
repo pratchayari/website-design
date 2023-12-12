@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>การเลือกเอลิเมนต์ของฟอร์ม exabled | disbled | read-only | read-write | placeholder-shown </title>
+    <style>
+/*         input{
+            border: 3px solid red;
+            border-radius: 3px;
+        } */
+        input:enbled{
+            color: blue;
+        }
+        input:disabled{
+            color: #eee;
+        }
+        textarea:read-write{
+            background-color: pink;
+            border-radius: 4px;
+        }
+        input:placeholder-shown{
+            color: orange;
+        }
+        input:read-only{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>การเลือกเอลิเมนต์ของฟอร์ม exabled | disbled | read-only | read-write | placeholder-shown </h1>
     <form action="">
         <p> <label for="">ชื่อสินค้า : </label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" enabled>
         </p>
         <p>
             <label for="">สี : </label>
